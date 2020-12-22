@@ -73,6 +73,7 @@ export interface UseUserOrders<ORDERS, ORDER_SEARCH_PARAMS> {
   orders: ComputedProperty<ORDERS>;
   search(params: ComposableFunctionArgs<ORDER_SEARCH_PARAMS>): Promise<void>;
   loading: ComputedProperty<boolean>;
+  error: ComputedProperty<ComposableErrors>;
 }
 
 export interface UseUserAddress<ADDRESS> {
@@ -192,6 +193,7 @@ export interface UseWishlist
   load(params: { customQuery?: CustomQuery }): Promise<void>;
   clear(): Promise<void>;
   isOnWishlist({ product: PRODUCT }): boolean;
+  error: ComputedProperty<ComposableErrors>;
 }
 
 export interface UseCompare<PRODUCT> {
