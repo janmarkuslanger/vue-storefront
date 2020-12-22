@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.13.0] - UNRELEASED
 
+### Added
+- New config `cart.forceUpdateStateClientInCheckout` to change default behavior in checkout
+
 ### Fixed
 - Fixed some typo in docs (#5071)
 
